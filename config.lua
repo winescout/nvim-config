@@ -215,34 +215,6 @@ lvim.plugins = {
   { "powerman/vim-plugin-AnsiEsc" },
   { "majutsushi/tagbar" },
   { "farseer90718/vim-taskwarrior" },
-  -- { "nvim-neorg/neorg",
-  --   run = ":Neorg sync-parsers",
-  --   config = function()
-  --     require('neorg').setup {
-  --       load = {
-  --         ["core.defaults"] = {},
-  --         ["core.integrations.telescope"] = {},
-  --         ["core.norg.dirman"] = {
-  --           config = {
-  --             workspaces = {
-  --               work = "~/notes/work",
-  --               home = "~/notes/home",
-  --               gtd = "~/notes/gtd",
-  --             }
-  --           }
-  --         },
-  --         ["core.gtd.base"] = {
-  --           config = {
-  --             workspace = 'gtd',
-  --           }
-  --         },
-
-  --       }
-
-  --     }
-  --   end,
-  --   requires = { "nvim-lua/plenary.nvim", "nvim-neorg/neorg-telescope" },
-  -- },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
