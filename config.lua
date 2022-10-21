@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "tokyonight"
 lvim.lsp.diagnostics.virtual_text = false
 vim.opt.mouse = "v"
 vim.opt.wrap = true
@@ -19,9 +19,8 @@ vim.opt.wrap = true
 -- lvim.use_icons = false
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
-lvim.leader = " "
+lvim.leader = "space"
 -- add your own keymapping
-
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.insert_mode["jj"] = "<esc>"
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
@@ -46,12 +45,13 @@ lvim.keys.insert_mode["jj"] = "<esc>"
 --   n = {
 --     ["<C-j>"] = actions.move_selection_next,
 --     ["<C-k>"] = actions.move_selection_previous,
+lvim.keys.insert_mode["jj"] = "<esc>"
 --   },
 -- }
 
 -- Change theme settings
 -- lvim.builtin.theme.options.dim_inactive = true
-
+-- lvim.builtin.theme.options.style = "storm"
 
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
@@ -80,6 +80,7 @@ lvim.builtin.which_key.mappings["S"] = {
 --   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
 --   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
 -- }
+
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
@@ -216,7 +217,6 @@ lvim.plugins = {
   { "majutsushi/tagbar" },
   { "farseer90718/vim-taskwarrior" },
 }
-
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.json", "*.jsonc" },
